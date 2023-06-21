@@ -26,7 +26,7 @@
 .header__nav {
     grid-column-start: 2;
     display: grid;
-    grid-template-columns: 20% 50% 30%;
+    grid-template-columns: 20% 60% 20%;
 }
 
 .header__nav__logo {
@@ -68,7 +68,7 @@
     background-color: transparent;
 }
 .header-input:focus {
-    width: 200px;
+    width: 10vw;
 }
 
 .header-input::placeholder {
@@ -80,6 +80,7 @@
 
 
 .header__menu-direito {
+    position: relative;
     grid-column-start: 3;
     grid-column-end: 4;
     display: flex;
@@ -88,15 +89,56 @@
     align-items: center;
 }
 
-.logo, .menu-meio, .menu-direito {
+.logo, .menu-meio-centro, 
+.menu-meio,
+.menu-direito, 
+.menu-meio-menu {
     padding: 0.5rem 0;
     color: var(--clr-font2);
 }
 
+.menu-meio-centro:hover,
+.menu-meio-menu:hover,
 .menu-meio:hover {
     color: var(--clr-secondary);
     text-shadow: 1px 1px 4px var(--clr-secondary);
 }
+
+
+
+
+
+
+/***********************************************************/
+
+.menu-direito_menu {
+    position: relative;
+}
+
+.header__menu-icone {
+    position: absolute;
+    top: 65%;
+    display: none;
+}
+
+.header__menu-icone-menu {
+    display: flex;
+    flex-direction: column;
+    background-color: transparent;
+    padding: 05px 15px;
+    backdrop-filter: blur(20px);
+    border-radius: 4px;
+    box-shadow: 8px 8px 8px #000000;
+}
+
+.menu-direito_menu:hover+.header__menu-icone {
+    display: block;
+}
+
+/***********************************************************/
+
+
+
 
 
 body {
@@ -131,29 +173,27 @@ body {
     align-items: center;
 }
 
+
 .product__img {
     display: flex;
     height: 450px;
-}
-
-/* .product__img {
+    /*Animation*/
     animation-name: floatPhone;
-    animation-duration: 3;
-    animation-timing-function: ease-in;
-    animation-delay: 0;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 1s;
     animation-iteration-count: infinite;
-    animation-direction: normal;
-    animation-fill-mode: none;   
+    animation-direction: alternate;
+    animation-fill-mode: none;
 }
 @keyframes floatPhone {
     from {
-        transform: translatex(-10px);
+        transform: translateY(5px);
     }
     to {
-        transform: translatex(10px);
+        transform: translateY(-5px);
     }
-} */
-
+}
 
 .content__subtitle {
     font-weight: 700;
@@ -289,5 +329,3 @@ a {
     font-weight: 500;
     color: var(--clr-font1);
 }
-
-
