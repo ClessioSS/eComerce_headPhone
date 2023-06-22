@@ -1,20 +1,19 @@
-@media screen and (max-width:428px) {
-    
-    .header__menu-meio {
-        grid-column-start: none;
-        grid-column-end: none;
-        display: none;
-        gap: none;
-        justify-content: none;
-        align-items: none;
-    }
-
+@media screen and (max-width: 412px) {
     .logo-title {
+        display: none;
+    }
+ 
+    .header__menu-meio {
         display: none;
     }
 
     .header-input:focus {
-        width: 130px;
+        width: 35vw;
+    }
+
+    .menu-meio {
+        width:60px;
+        font-size: 0.7em;
     }
 
     .container {
@@ -34,7 +33,8 @@
     }
     
     .product__img {
-        height: 450px;
+        margin-top: 50px;
+        height: 350px;
     }
 
     .content__subtitle {
