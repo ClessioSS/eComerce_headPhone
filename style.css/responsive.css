@@ -93,3 +93,18 @@
         width: 80vw;
     }
 }
+
+
+@media screen and (min-width: 1920px) {
+    .container {
+        grid-template-columns: 20% 30% 30% 20%;
+    }
+    .header {
+        grid-template-columns: 20% 60% 20%;
+    }
+    .low-page {
+        display: grid;
+        gap: 10px;
+        grid-template-columns: 20% 15% 15% 15% 15% 20%;
+    }
+}
