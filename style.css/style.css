@@ -65,6 +65,7 @@
     color: var(--clr-font2);
     border-radius: 8px;
     background-color: transparent;
+    outline: none;
 }
 .header-input:focus {
     width: 10vw;
@@ -221,6 +222,7 @@ body {
     font-size: 1em;
     background-image: var(--clr-gradient);
     box-shadow: 2px 2px 6px var(--clr-secondary);
+    cursor: pointer;
 }
 .content__button:hover {
     letter-spacing: 0.2em;
