@@ -10,6 +10,7 @@ Página simples de e-Commerce com foco no design.
 
 ## 🔧Construido apenas com
 Página contruida usando HTML e CSS.
+
  ![html5](https://img.shields.io/badge/-HTML5-05122A?styke=flat&logo=html5)
  ![html5](https://img.shields.io/badge/-CSS3-05122A?styke=flat&logo=css3)
 
